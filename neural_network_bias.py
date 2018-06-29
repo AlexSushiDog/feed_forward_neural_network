@@ -83,7 +83,7 @@ data_file.close()
 #2) Initialise neural network class
 input_size = 784
 output_size = 10
-hidden_size = 600
+hidden_size = 500
 
 training_iterations = 80000
 
