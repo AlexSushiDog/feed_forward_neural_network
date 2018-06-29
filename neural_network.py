@@ -5,7 +5,7 @@ from tqdm import tqdm #Progress bar
 
 def sig(x,deriv=0): #Sigmoid function and derivative
     if deriv:
-        return sig(x)*(sig(1-x))
+        return sig(x)*(1-sig(x))
     else:
         return 1/(1+np.exp(-x))
 
