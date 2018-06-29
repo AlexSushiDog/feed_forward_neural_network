@@ -25,10 +25,6 @@ class neural_network: #Feed Forward Network Class
         self.hidden_weights_one = np.random.normal(mu, sigma, (h_size, h_size))
         self.output_weights = np.random.normal(mu, sigma, (y_size, h_size))
 
-        #Bias vectors
-        self.hidden_bias_one = np.random.normal(mu, sigma, (h_size, 1))
-        self.output_bias_one = np.random.normal(mu, sigma, (y_size, 1))
-
     def forward(self, x): #Function to perform forward pass through network
         hidden_state_one = sig(np.dot(self.input_weights, x))
         hidden_state_two = sig(np.dot(self.hidden_weights_one, hidden_state_one))
