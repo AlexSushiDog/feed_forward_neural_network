@@ -1,7 +1,6 @@
 #Import dependancies
 import numpy as np #For matrix math
 import random #For random
-import matplotlib.pyplot as plt #Plotting MNIST images
 from tqdm import tqdm #Progress bar
 
 def sig(x,deriv=0): #Sigmoid function and derivative
